@@ -1,6 +1,6 @@
 // // Code your solutions in this file
 
-const name = ["Guadalupe", "Ollie", "Aki"];
+const name = [];
 const messages =[];
 function writeCards(name,event) {
   for (let i = 0; i < name.length; i++) {
@@ -9,10 +9,9 @@ function writeCards(name,event) {
     messages.push(re);
       }
       console.log(messages);
-  return name;
 }
 
-writeCards(name,"surprise");
+writeCards(["Guadalupe", "Ollie", "Aki"],"surprise");
 
 
 function countDown (){
