@@ -1,24 +1,22 @@
 // // Code your solutions in this file
-
-const name = [];
-const messages =[];
-// let re =[];
-function writeCards(name,event) {
-//   for (let i = 0; i < name.length; i++) 
-  let i =0;
-  while(i<name.length)
-  {
-    messages.push( `Thank you, ${name[i++]}  for the wonderful,${event} gift! `);
-      }
-    console.log(messages);
-//     AssertionError: expected undefined to deeply equal [ …(3) ]
-// at Context.<anonymous> (test/indexTest.js:17:77)
-
-    // re.push(messages);
-    // console.log(re);
+const names = ["Guadalupe", "Ollie", "Aki"];
+let messages = [];
+function writeCards(names, event){
+  let firstMessage= [];
+  for(let i =0; i<names.length; i++) {
+  firstMessage.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+  // console.log(messages.push(firstMessage));
+// return messages;
+  }
+ messages =[...firstMessage]
+  console.log(messages);
+  return messages;
 }
+writeCards(names, "surprise")
 
-writeCards(["Guadalupe", "Ollie", "Aki"],"surprise");
+
+
+
 
 function countDown (){
     let i =0;
@@ -27,3 +25,15 @@ function countDown (){
     }
 }
 countDown();
+
+
+ // let i =0;
+  // while(i<nameV.length)  { 
+  //   // if(i<name.length){
+  // messages.unshift( `Thank you, ${name[i]}  for the wonderful,${event} gift! `);
+  //   i++;
+
+    // console.log(messages);\
+        // }
+
+// writeCards(name,"surprise");
